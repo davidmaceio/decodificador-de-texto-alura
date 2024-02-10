@@ -1,14 +1,14 @@
-body {
-    background-color: #000000;
+.topo {
+    margin:  20% 20%;
+    
 }
 
-.classe2 {
-
+corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.classe3 {
-
+.rodape {
+    
 }
-
-
-@media
