@@ -7,35 +7,73 @@
     <meta name="description" content="Venha fazer parte do nosso excelente portfólio de sites do grupo RajaSoftware.">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="/assets/favicon.ico">
+    <script src="scripts/app.js"></script>
 </head>
 
-<body class="container">
-    <header class="topo">
-        <img src="assets/logo-alura.png" alt="Logomarca da Alura">
-        <img src="assets/logo-rajasoftware.png" alt="Logomarca da RajaSoftware">
-    </header>
-    <main class="corpo">
-        <section>
-            <section class="corpo"></section>
-            <img src="/assets/botao-criptografar.png" alt="Criptografar">
-            <img src="/assets/botao-descriptografar.png" alt="Descriptografar">
-            <section>
-                <div><p>Lorem ipsum dolor sit amet. Aut ipsa corrupti ad officia provident aut consequatur ullam cum nemo voluptatem non deleniti nesciunt eum dolores praesentium. Sed sapiente ullam sit eaque vero ab mollitia tenetur. Eos corrupti quibusdam ut incidunt ratione aut dolor beatae ea maxime perspiciatis et explicabo numquam. Ut itaque autem qui optio ullam ut rerum autem eum necessitatibus libero qui repudiandae illum non esse voluptatem et dolor dignissimos. </p>
+<body>
+    <div>
+        <header class="cabecalho">
+            <img src="assets/logo-alura.png" alt="Logomarca da Alura">
+            <img src="assets/logo-rajasoftware.png" alt="Logomarca da RajaSoftware">
+        </header>
+    <div>
+        <main class="container">
+            <section class="container-inputs">
+                <p>Apenas letras minúsculas e sem acento.</p>
+                <textarea onkeydown="buttonAttributeRemove()" maxlength="319" placeholder="Digitar o texto para ser criptografado pela equipe RajaSoftware." class="text-area" name="Digite seu texto" id="textArea" cols="70" rows="10" style="resize: none;"></textarea>
+                <div class="container-buttons">
+                    <button id="button-main" class="button" onclick="criptografar()" disabled>
+                        <img src="assets/botao-criptografar.png" alt="Botão para criptografar">
+                    </button>
+                    <button id="button-main2" class="button" onclick="descriptografar()" disabled>
+                        <img src="assets/botao-descriptografar.png" alt="Botão para descriptografar">
+                    </button>
                 </div>
-            
-    
             </section>
-            <img src="/assets/botao-copiar.png" alt="Copiar texto">
-            <img src="/assets/imagem.svg" alt="Não achamos nada!">            
-        </section>
+            <section id="container1" class="container-result">
+                <div id="container1-variable" class="container-result2">
+                    <div class="container-texts">
+                        <h1 class="container-text">Nenhuma mensagem encontrada</h1>
+                        <p class="container-text">Digite um texto que você deseja criptografar ou descriptografar</p>
+                    </div>
+                </div>
+            </section>
+            <section id="container2" class="container-result-variable">
+                <div class="variable-container-texts">
+                        <h1 class="variable-container-text">Texto Criptografado</h1>
+                        <textarea maxlength="319" readonly class="variable-text-area" name="variable-text" id="textarea1" cols="70" rows="10" style="resize: none;"></textarea>
+                    <div class="relative-itens">
+                        <div class="relative-buttons">
+                            <button class="relative-button" onclick="copiar()">Copiar</button>
+                            <button class="relative-button" onclick="reiniciar()">Reiniciar</button>
+                        </div>
+                    </div>   
+                </div>
+            </section>
+            <section id="container3" class="container-result-variable2">
+                    <div class="variable-container-texts">
+                        <h1 class="variable-container-text">Texto Descriptografado</h1>
+                        <textarea maxlength="319" readonly class="variable-text-area" name="variable-text" id="textarea2" cols="70" rows="10" style="resize: none;"></textarea>
+                        <div class="relative-itens">
+                            <div class="relative-buttons">
+                                <button class="relative-button" onclick="copiar()">Copiar</button>
+                                <button class="relative-button" onclick="reiniciar()">Recomeçar</button>
+                            </div>
+                        </div>   
+                    </div>
 
+            </section> 
     </main>
-    <footer class="rodape">
-        Desenvolvido por David Anderson da S. Souza<br>
-        Empresa <strong>RajaSoftware</strong> de desenvolvimento.<br>
-        Contato: <a href="davidmaceio@hotmail.com">davidmaceio@hotmail.com</a><br>
-        Linkedin: <a href="https://www.linkedin.com/in/david-anderson-da-silva-souza-20748029/" target="_blank">linkedin.com/david/</a>
-    </footer>
+    </div>
 
+    <div>
+    <footer>
+                Desenvolvido por David Anderson da S. Souza<br>
+                Empresa <strong>RajaSoftware</strong> de desenvolvimento.<br>
+                Contato: <a href="davidmaceio@hotmail.com">davidmaceio@hotmail.com</a><br>
+                Linkedin: <a href="https://www.linkedin.com/in/david-anderson-da-silva-souza-20748029/" target="_blank">linkedin.com/david/</a>
+    </footer>
+    </div>
 </body>
+ 
 </html>
